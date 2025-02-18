@@ -24,9 +24,9 @@ button.addEventListener('click', async ()=>{
         alert('city name cannot be empty'); return;
     }
     let result = await weather(city);
-   container.innerHTML= `<h3>🌍 Weather in ${result.location.name}, ${result.location.country}</h3>,
-   <p>🌡️ Temperature: ${result.current.temp_c}°C</p>,
-   <p>☁️ Condition: ${result.current.condition.text}</p>,
-   <p>💨 Wind Speed: ${result.current.wind_kph} km/h</p>,
+   container.innerHTML= `<h3>🌍 Weather in ${result.location.name}, ${result.location.country}</h3>
+   <p>🌡️ Temperature: ${result.current.temp_c}°C</p>
+   <p>☁️ Condition: ${result.current.condition.text}</p>
+   <p>💨 Wind Speed: ${result.current.wind_kph} km/h</p>
    <p>🌬️ Air Quality Index: ${result.current.air_quality.pm10}</p>`;
 });
